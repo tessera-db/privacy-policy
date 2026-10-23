@@ -1,101 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="glass">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy Policy — Tessera</title>
-<meta name="description" content="Privacy policy for the Tessera Android app.">
-<style>
-  :root { color-scheme: light dark; }
-  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 42em; margin: 2em auto; padding: 0 1em; line-height: 1.6; color: #222; background: #fff; }
-  h1 { font-size: 1.6em; line-height: 1.25; }
-  h2 { font-size: 1.15em; margin-top: 1.8em; }
-  a { color: #2a4fd6; }
-  .meta { color: #555; }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e6e6e6; background: #15161a; }
-    .meta { color: #aaa; }
-    a { color: #8ea6ff; }
-  }
-</style>
+<meta name="description" content="How Tessera handles your data: stored on your device, optionally synced to your own Google Drive, with no account, ads, analytics or trackers.">
+<meta name="theme-color" content="#0b1230">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy — Tessera">
+<meta property="og:description" content="Your data stays on your device unless you turn on Google Drive sync for a library. No account with us, no advertising, no analytics, no trackers.">
+<meta property="og:image" content="https://tessera-db.github.io/assets/og.jpg">
+<meta property="og:url" content="https://tessera-db.github.io/privacy-policy/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/bricolage-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/tessera.css">
+<script>(function(){var t;try{t=localStorage.getItem('tessera-theme')}catch(e){}if(t==='glass'||t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)})()</script>
 </head>
 <body>
-<h1>Privacy Policy — Tessera</h1>
-<p class="meta">Last updated: October 11, 2026<br>
-Contact: <a href="mailto:tesseradb@gmail.com">tesseradb@gmail.com</a></p>
+<a class="skip" href="#policy">Skip to the policy</a>
 
-<p>Tessera is a personal database app for Android. It works fully offline: your libraries, records, attachments and settings are stored on your device. We, the developer, operate no servers and never receive your data. This policy explains what the app stores, the one optional feature that sends data off your device, and how to delete everything.</p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 104 104">
+    <path style="fill:var(--m1)" d="M5.4,2 H35.5 A12.5,12.5 0 0 1 48,14.5 V35.5 A12.5,12.5 0 0 1 35.5,48 H14.5 A12.5,12.5 0 0 1 2,35.5 V5.4 A3.4,3.4 0 0 1 5.4,2 Z"/>
+    <path style="fill:var(--m2)" d="M59.4,2 H89.5 A12.5,12.5 0 0 1 102,14.5 V35.5 A12.5,12.5 0 0 1 89.5,48 H68.5 A12.5,12.5 0 0 1 56,35.5 V5.4 A3.4,3.4 0 0 1 59.4,2 Z"/>
+    <path style="fill:var(--m3)" d="M5.4,56 H35.5 A12.5,12.5 0 0 1 48,68.5 V89.5 A12.5,12.5 0 0 1 35.5,102 H14.5 A12.5,12.5 0 0 1 2,89.5 V59.4 A3.4,3.4 0 0 1 5.4,56 Z"/>
+    <path style="fill:var(--m4)" d="M59.4,56 H89.5 A12.5,12.5 0 0 1 102,68.5 V89.5 A12.5,12.5 0 0 1 89.5,102 H68.5 A12.5,12.5 0 0 1 56,89.5 V59.4 A3.4,3.4 0 0 1 59.4,56 Z"/>
+  </symbol>
+</svg>
 
-<h2>Summary</h2>
-<ul>
-<li>No account with us, no advertising, no analytics, no crash-reporting services, no trackers.</li>
-<li>Your data stays on your device unless you turn on Google Drive sync for a library.</li>
-<li>Tessera is free. An optional one-time <em>Tessera Pro</em> purchase is handled entirely by Google Play.</li>
-<li>With sync on, that library is copied only to <strong>your own</strong> Google Drive. We cannot see it.</li>
-</ul>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="https://tessera-db.github.io/" aria-label="Tessera home"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg>Tessera</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="https://tessera-db.github.io/">Home</a>
+      <a href="https://tessera-db.github.io/#features">Features</a>
+      <a href="https://tessera-db.github.io/#download">Download</a>
+      <a href="https://tessera-db.github.io/privacy-policy/" aria-current="page">Privacy policy</a>
+    </nav>
+    <div class="theme-switch" role="group" aria-label="Theme">
+      <button type="button" data-set-theme="glass" aria-pressed="true" aria-label="Liquid Glass theme"><i class="swatch glass"></i><span class="lbl">Liquid Glass</span></button>
+      <button type="button" data-set-theme="dark" aria-pressed="false" aria-label="Dark theme"><i class="swatch dark"></i><span class="lbl">Dark</span></button>
+      <button type="button" data-set-theme="light" aria-pressed="false" aria-label="Light theme"><i class="swatch light"></i><span class="lbl">Light</span></button>
+    </div>
+  </div>
+</header>
 
-<h2>Data stored on your device</h2>
-<ul>
-<li><strong>Your content:</strong> libraries, tables, records, attachments (photos and files you add), dashboards and scripts. Stored in the app's private storage.</li>
-<li><strong>Settings and sync status:</strong> preferences, the name of your Drive folder, and the time of the last sync.</li>
-<li><strong>Crash logs:</strong> if the app crashes, a short technical log is saved in the app's private storage to help diagnose the problem. It is never sent anywhere automatically.</li>
-</ul>
-<p>Optional library locks use your phone's fingerprint, face or screen lock. They hide a library from someone holding your unlocked phone; they do not encrypt the data. The app never receives your biometric data.</p>
+<main>
+  <div class="doc-hero">
+    <div class="wrap">
+      <p class="eyebrow">Tessera for Android</p>
+      <h1>Privacy Policy</h1>
+      <div class="doc-meta">
+        <span>Last updated: October 11, 2026</span>
+        <span>Contact: <a class="mail" href="mailto:tesseradb@gmail.com">tesseradb@gmail.com</a></span>
+      </div>
+      <p class="intro">Tessera is a personal database app for Android. It works fully offline: your libraries, records, attachments and settings are stored on your device. We, the developer, operate no servers and never receive your data. This policy explains what the app stores, the one optional feature that sends data off your device, and how to delete everything.</p>
+    </div>
+  </div>
 
-<h2>Google Drive sync (optional, off by default)</h2>
-<p>If you turn on sync for a library:</p>
-<ul>
-<li>You sign in with your own Google account using Google's sign-in page (OAuth 2.0 with PKCE). The app on your device receives an access token and your Google account email address. The email is shown in the app so you know which account is connected. It is also stored with each record you create, so synced records show who added them.</li>
-<li>The app requests permission to create files in your Google Drive and to access only the files it creates. It cannot see your other Drive files.</li>
-<li>The library's records, attachments and settings are uploaded to a Tessera folder in your Google Drive and kept up to date across your devices. The data travels over an encrypted connection (HTTPS) directly between your device and Google. It is stored in your Drive in a readable form, under Google's terms and privacy policy, and anyone you give access to that folder can read it.</li>
-<li>When you turn sync off for a library, Tessera asks whether to keep the library's copy in your Drive or move it to your Drive trash, where Google keeps it for 30 days. Your records on the device are not affected.</li>
-<li>Sign-in tokens are stored on your device, encrypted with a key held in the Android Keystore where the device supports it. They are sent only to Google.</li>
-<li>Tessera's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. The data is used only to provide the sync feature, is not sold, is not used for advertising, and is not read by people.</li>
-</ul>
+  <div class="doc">
+    <div class="wrap">
+      <nav class="toc surface" aria-label="Contents">
+        <p>Contents</p>
+        <ol>
+          <li><a href="#summary"><span>01</span>Summary</a></li>
+          <li><a href="#on-device"><span>02</span>Data stored on your device</a></li>
+          <li><a href="#drive-sync"><span>03</span>Google Drive sync</a></li>
+          <li><a href="#purchases"><span>04</span>Purchases</a></li>
+          <li><a href="#reminders"><span>05</span>Reminders and notifications</a></li>
+          <li><a href="#widgets"><span>06</span>Home-screen widgets</a></li>
+          <li><a href="#sharing"><span>07</span>Data we share</a></li>
+          <li><a href="#permissions"><span>08</span>Permissions</a></li>
+          <li><a href="#deletion"><span>09</span>Retention and deletion</a></li>
+          <li><a href="#security"><span>10</span>Security</a></li>
+          <li><a href="#children"><span>11</span>Children</a></li>
+          <li><a href="#changes"><span>12</span>Changes to this policy</a></li>
+          <li><a href="#contact"><span>13</span>Contact</a></li>
+        </ol>
+      </nav>
 
-<h2>Purchases</h2>
-<p>Tessera Pro is a one-time purchase made through Google Play. Google Play handles the payment under Google's terms and privacy policy; Tessera never sees your card details, billing address or name. The app asks Google Play whether your Google account owns Tessera Pro and stores a single "unlocked" flag on your device. No purchase information is sent to us. Receipts and refunds are handled by Google Play.</p>
+      <article class="policy" id="policy">
 
-<h2>Reminders and notifications</h2>
-<p>When you set a reminder on a date field, the reminder time is stored in the app's private database on your device. Android schedules the alarm and Tessera creates the notification on your device. Nothing about your reminders is sent anywhere.</p>
+        <section id="summary" class="surface glance" aria-labelledby="h-summary">
+          <h2 id="h-summary"><span class="n">01</span>Summary</h2>
+          <ul>
+            <li>No account with us, no advertising, no analytics, no crash-reporting services, no trackers.</li>
+            <li>Your data stays on your device unless you turn on Google Drive sync for a library.</li>
+            <li>Tessera is free. An optional one-time <em>Tessera Pro</em> purchase is handled entirely by Google Play.</li>
+            <li>With sync on, that library is copied only to <strong>your own</strong> Google Drive. We cannot see it.</li>
+          </ul>
+        </section>
 
-<h2>Home-screen widgets</h2>
-<p>If you add a Tessera widget, it shows the library name and the item you chose (and, for metric widgets, its current value) on your home screen, where anyone holding your unlocked phone can see it. Widgets for locked libraries show "Locked" instead of their contents. Widgets read from the app's database on your device and send nothing anywhere.</p>
+        <section id="on-device" class="surface" aria-labelledby="h-on-device">
+          <h2 id="h-on-device"><span class="n">02</span>Data stored on your device</h2>
+          <ul>
+            <li><strong>Your content:</strong> libraries, tables, records, attachments (photos and files you add), dashboards and scripts. Stored in the app's private storage.</li>
+            <li><strong>Settings and sync status:</strong> preferences, the name of your Drive folder, and the time of the last sync.</li>
+            <li><strong>Crash logs:</strong> if the app crashes, a short technical log is saved in the app's private storage to help diagnose the problem. It is never sent anywhere automatically.</li>
+          </ul>
+          <p>Optional library locks use your phone's fingerprint, face or screen lock. They hide a library from someone holding your unlocked phone; they do not encrypt the data. The app never receives your biometric data.</p>
+        </section>
 
-<h2>Data we share</h2>
-<p>We do not share, sell or transfer your data to anyone. When you use Drive sync, your device sends the library to Google Drive at your request. Backups and CSV exports go only where you choose in the system file picker. CSV files you import are read once through the system picker and copied into a new table.</p>
+        <section id="drive-sync" class="surface" aria-labelledby="h-drive-sync">
+          <h2 id="h-drive-sync"><span class="n">03</span>Google Drive sync (optional, off by default)</h2>
+          <p>If you turn on sync for a library:</p>
+          <ul>
+            <li>You sign in with your own Google account using Google's sign-in page (OAuth 2.0 with PKCE). The app on your device receives an access token and your Google account email address. The email is shown in the app so you know which account is connected. It is also stored with each record you create, so synced records show who added them.</li>
+            <li>The app requests permission to create files in your Google Drive and to access only the files it creates. It cannot see your other Drive files.</li>
+            <li>The library's records, attachments and settings are uploaded to a Tessera folder in your Google Drive and kept up to date across your devices.</li>
+            <li>The data travels over an encrypted connection (HTTPS) directly between your device and Google. It is stored in your Drive in a readable form, under Google's terms and privacy policy, and anyone you give access to that folder can read it.</li>
+            <li>When you turn sync off for a library, Tessera asks whether to keep the library's copy in your Drive or move it to your Drive trash, where Google keeps it for 30 days. Your records on the device are not affected.</li>
+            <li>Sign-in tokens are stored on your device, encrypted with a key held in the Android Keystore where the device supports it. They are sent only to Google.</li>
+            <li>Tessera's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. The data is used only to provide the sync feature, is not sold, is not used for advertising, and is not read by people.</li>
+          </ul>
+        </section>
 
-<h2>Permissions</h2>
-<ul>
-<li><strong>Internet:</strong> used by Google Drive sync, for libraries you turn sync on for, and by Google Play for the Pro purchase.</li>
-<li><strong>Network state:</strong> used to skip sync attempts while you are offline.</li>
-<li><strong>Notifications:</strong> to show reminders you set. Asked for only when you set your first reminder.</li>
-<li><strong>Alarms &amp; reminders (exact alarms):</strong> to deliver a reminder at the minute you chose. You can refuse; reminders may then arrive a little later.</li>
-<li><strong>Run at startup:</strong> to re-arm your reminders after your phone restarts.</li>
-<li><strong>Biometrics:</strong> to unlock a library you have locked with your fingerprint or face. Android handles the check; Tessera never receives biometric data.</li>
-<li><strong>Google Play billing:</strong> to offer the optional Tessera Pro purchase.</li>
-</ul>
-<p>Tessera requests no other permissions. Photos and files you attach are chosen through the system picker, which gives the app access to the selected items only.</p>
+        <section id="purchases" class="surface" aria-labelledby="h-purchases">
+          <h2 id="h-purchases"><span class="n">04</span>Purchases</h2>
+          <p>Tessera Pro is a one-time purchase made through Google Play. Google Play handles the payment under Google's terms and privacy policy; Tessera never sees your card details, billing address or name. The app asks Google Play whether your Google account owns Tessera Pro and stores a single "unlocked" flag on your device. No purchase information is sent to us. Receipts and refunds are handled by Google Play.</p>
+        </section>
 
-<h2>Retention and deletion</h2>
-<ul>
-<li><strong>In the app:</strong> delete individual items, or use Settings → Delete all data to erase everything on the device.</li>
-<li><strong>Uninstalling</strong> the app deletes all of its data from your device. Android's cloud backup is turned off for Tessera.</li>
-<li><strong>Google sign-in:</strong> Drive settings → Sign out removes the tokens from your device. You can also remove Tessera's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-<li><strong>Drive copies:</strong> signing out does not delete files from your Drive, because they are your data. Delete the Tessera folder in Google Drive to remove them.</li>
-</ul>
-<p>We keep no copy of your data, so there is nothing for us to retain or delete on our side.</p>
+        <section id="reminders" class="surface" aria-labelledby="h-reminders">
+          <h2 id="h-reminders"><span class="n">05</span>Reminders and notifications</h2>
+          <p>When you set a reminder on a date field, the reminder time is stored in the app's private database on your device. Android schedules the alarm and Tessera creates the notification on your device. Nothing about your reminders is sent anywhere.</p>
+        </section>
 
-<h2>Security</h2>
-<p>Data sent to Google Drive is protected in transit by HTTPS. Sign-in tokens are encrypted on the device. Scripts you write run in a sandbox with no network or file access. Data stored on your device and in your Drive is not encrypted by Tessera, so protect your phone with a screen lock and your Google account with 2-step verification.</p>
+        <section id="widgets" class="surface" aria-labelledby="h-widgets">
+          <h2 id="h-widgets"><span class="n">06</span>Home-screen widgets</h2>
+          <p>If you add a Tessera widget, it shows the library name and the item you chose (and, for metric widgets, its current value) on your home screen, where anyone holding your unlocked phone can see it. Widgets for locked libraries show "Locked" instead of their contents. Widgets read from the app's database on your device and send nothing anywhere.</p>
+        </section>
 
-<h2>Children</h2>
-<p>Tessera is not directed at children under 13.</p>
+        <section id="sharing" class="surface" aria-labelledby="h-sharing">
+          <h2 id="h-sharing"><span class="n">07</span>Data we share</h2>
+          <p>We do not share, sell or transfer your data to anyone. When you use Drive sync, your device sends the library to Google Drive at your request. Backups and CSV exports go only where you choose in the system file picker. CSV files you import are read once through the system picker and copied into a new table.</p>
+        </section>
 
-<h2>Changes to this policy</h2>
-<p>If this policy changes, we will update this page and the "Last updated" date above, and describe significant changes in the app's release notes.</p>
+        <section id="permissions" class="surface" aria-labelledby="h-permissions">
+          <h2 id="h-permissions"><span class="n">08</span>Permissions</h2>
+          <dl class="perms">
+            <div><dt>Internet</dt><dd>used by Google Drive sync, for libraries you turn sync on for, and by Google Play for the Pro purchase.</dd></div>
+            <div><dt>Network state</dt><dd>used to skip sync attempts while you are offline.</dd></div>
+            <div><dt>Notifications</dt><dd>to show reminders you set. Asked for only when you set your first reminder.</dd></div>
+            <div><dt>Alarms &amp; reminders (exact alarms)</dt><dd>to deliver a reminder at the minute you chose. You can refuse; reminders may then arrive a little later.</dd></div>
+            <div><dt>Run at startup</dt><dd>to re-arm your reminders after your phone restarts.</dd></div>
+            <div><dt>Biometrics</dt><dd>to unlock a library you have locked with your fingerprint or face. Android handles the check; Tessera never receives biometric data.</dd></div>
+            <div><dt>Google Play billing</dt><dd>to offer the optional Tessera Pro purchase.</dd></div>
+          </dl>
+          <p>Tessera requests no other permissions. Photos and files you attach are chosen through the system picker, which gives the app access to the selected items only.</p>
+        </section>
 
-<h2>Contact</h2>
-<p>Questions or requests about privacy: <a href="mailto:tesseradb@gmail.com">tesseradb@gmail.com</a>.</p>
+        <section id="deletion" class="surface" aria-labelledby="h-deletion">
+          <h2 id="h-deletion"><span class="n">09</span>Retention and deletion</h2>
+          <ul>
+            <li><strong>In the app:</strong> delete individual items, or use Settings → Delete all data to erase everything on the device.</li>
+            <li><strong>Uninstalling</strong> the app deletes all of its data from your device. Android's cloud backup is turned off for Tessera.</li>
+            <li><strong>Google sign-in:</strong> Drive settings → Sign out removes the tokens from your device. You can also remove Tessera's access at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+            <li><strong>Drive copies:</strong> signing out does not delete files from your Drive, because they are your data. Delete the Tessera folder in Google Drive to remove them.</li>
+          </ul>
+          <p>We keep no copy of your data, so there is nothing for us to retain or delete on our side.</p>
+        </section>
+
+        <section id="security" class="surface" aria-labelledby="h-security">
+          <h2 id="h-security"><span class="n">10</span>Security</h2>
+          <p>Data sent to Google Drive is protected in transit by HTTPS. Sign-in tokens are encrypted on the device. Scripts you write run in a sandbox with no network or file access. Data stored on your device and in your Drive is not encrypted by Tessera, so protect your phone with a screen lock and your Google account with 2-step verification.</p>
+        </section>
+
+        <section id="children" class="surface" aria-labelledby="h-children">
+          <h2 id="h-children"><span class="n">11</span>Children</h2>
+          <p>Tessera is not directed at children under 13.</p>
+        </section>
+
+        <section id="changes" class="surface" aria-labelledby="h-changes">
+          <h2 id="h-changes"><span class="n">12</span>Changes to this policy</h2>
+          <p>If this policy changes, we will update this page and the "Last updated" date above, and describe significant changes in the app's release notes.</p>
+        </section>
+
+        <section id="contact" class="surface" aria-labelledby="h-contact">
+          <h2 id="h-contact"><span class="n">13</span>Contact</h2>
+          <p>Questions or requests about privacy: <a class="mail" href="mailto:tesseradb@gmail.com">tesseradb@gmail.com</a>.</p>
+        </section>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <a class="brand" href="https://tessera-db.github.io/"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg>Tessera</a>
+    <span>A private database for Android.</span>
+    <nav aria-label="Footer">
+      <a href="https://tessera-db.github.io/">Home</a>
+      <a href="https://tessera-db.github.io/privacy-policy/" aria-current="page">Privacy policy</a>
+      <span>© 2026 Tessera</span>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/tessera.js"></script>
 </body>
 </html>
